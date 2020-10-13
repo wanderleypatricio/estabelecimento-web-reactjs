@@ -1,0 +1,140 @@
+#page-create-estabelecimento {
+    width: 100%;
+    max-width: 1100px;
+  
+    margin: 0 auto;
+  }
+  
+  #page-create-estabelecimento header {
+    margin-top: 48px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #page-create-estabelecimento header a {
+    color: var(--title-color);
+    font-weight: bold;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #page-create-estabelecimento header a svg {
+    margin-right: 16px;
+    color: var(--primary-color);
+  } 
+  
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    list-style: none;
+  }
+  
+  .items-grid li {
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    height: 180px;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+    text-align: center;
+  
+    cursor: pointer;
+  }
+  
+  .items-grid li span {
+    flex: 1;
+    margin-top: 12px;
+  
+    display: flex;
+    align-items: center;
+    color: var(--title-color)
+  }
+  
+  .items-grid li.selected {
+    background: #E1FAEC;
+    border: 2px solid #34CB79;
+  }
+
+  .table{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px slategray solid;
+    padding: 10px;
+  }
+
+  tr th {
+    background-color: grey;
+    color: #E1FAEC;
+    padding: 20px;
+    border-bottom: 1px slategray solid;
+    padding-bottom: 5px;
+    border-left: 1px slategray solid;
+  }
+
+  td{
+    border-bottom: 1px slategray solid;
+    padding-bottom: 5px;
+    text-align: center;
+    border-left: 1px slategray solid;
+  }
+
+  .btn{
+    width: 100px;
+    height: 46px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    align-self: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .btn-create-point{
+    width: 270px;
+    margin: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--primary-color);
+    color: #FFF;
+    transition: background-color 0.2s;
+  }
+
+  .btn-create-point a{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    background: var(--primary-color);
+    color: #FFF;
+    transition: background-color 0.2s;
+  }
+
+  .btn-create-point a:hover{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    transition: background-color 0.2s;
+  }
+
+  .btn-green{    
+    background: var(--primary-color);
+    color: #FFF;
+    transition: background-color 0.2s;    
+  }
+
+  .btn-danger{    
+    background: rgb(201,0,0);
+    color: #FFF;
+    transition: background-color 0.2s;    
+  }
